@@ -1,11 +1,10 @@
 name: End-to-end daily
 on: 
   schedule:
-    - cron: '* * * * *'
-  workflow_dispatch:
-
+    - cron: '2 * * * *'
+        
 jobs: 
-  cypress-run:
+  nightly-cypress-run:
     runs-on: ubuntu-latest 
     steps: 
       - name: Checkout
