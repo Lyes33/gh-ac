@@ -2,7 +2,7 @@ name: End-to-end tests
 on: push
 jobs: 
   cypress-run:
-    run-on: ubuntu-latest 
+    runs-on: ubuntu-latest 
     steps: 
       - name: checkout
         uses: actions/checkout@v3
