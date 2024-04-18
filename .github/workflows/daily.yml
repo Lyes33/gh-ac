@@ -1,12 +1,11 @@
 name: End-to-end daily
-on: 
+on:
   schedule:
-    - cron: '* * * * *'
-        
-jobs: 
+    - cron: "* * * * *"
+jobs:
   nightly-cypress-run:
-    runs-on: ubuntu-latest 
-    steps: 
+    runs-on: ubuntu-latest
+    steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Cypress run
